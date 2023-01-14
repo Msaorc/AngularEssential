@@ -5,14 +5,17 @@
                 <i class="material-icons white">
                     home
                 </i>
-                <span class="white">Inicio</span>
+                <span class="white">Home</span>
             </a>
             <a mat-list-item>
                 <i class="material-icons white" >
                     storefront
                 </i>
-                <span class="white">Produtos</span>
+                <span class="white">Products</span>
             </a>
         </mat-nav-list>
     </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
 </mat-sidenav-container>
