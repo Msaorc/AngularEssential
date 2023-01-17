@@ -17,6 +17,8 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
+import { ProductCreateComponent } from './componets/product/product-create/product-create.component';
+import { MatButtonModule} from '@angular/material/button'
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ForDirective } from './directives/for.directive';
     HomeComponent,
     ProductCrudComponent,
     RedDirective,
-    ForDirective
+    ForDirective,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { ForDirective } from './directives/for.directive';
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
