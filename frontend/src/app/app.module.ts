@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './componets/template/header/header.component';
+import { HeaderComponent } from './components/template/header/header.component';
 
 import { MatToolbarModule} from '@angular/material/toolbar';
-import { FooterComponent } from './componets/template/footer/footer.component';
-import { NavComponent } from './componets/template/nav/nav.component';
+import { FooterComponent } from './components/template/footer/footer.component';
+import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
@@ -17,8 +17,9 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
-import { ProductCreateComponent } from './componets/product/product-create/product-create.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { MatButtonModule} from '@angular/material/button'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { MatButtonModule} from '@angular/material/button'
     MatListModule,
     MatSidenavModule,
     MatCardModule,
-    MatButtonModule 
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
