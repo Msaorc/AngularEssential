@@ -9,9 +9,11 @@ import { ProductService } from '../product.service';
 })
 export class ProductReadComponent {
 
-  products: Product[] | undefined
+  products: Product[] = [];
+  displayedColumns = ['id', 'name', 'price'];
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService) {
+  }
 
   ngOnInit(): void {
     this.productService.read().subscribe(products => {
