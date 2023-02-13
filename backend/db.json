@@ -19,6 +19,11 @@
       "name": "Cadeira Gamer",
       "price": 1500,
       "id": 4
+    },
+    {
+      "name": "New Product",
+      "price": "350",
+      "id": 5
     }
   ]
 }
