@@ -18,7 +18,6 @@ export class ProductReadComponent {
   ngOnInit(): void {
     this.productService.find().subscribe(products => {
       this.products = products
-      console.log(products)
     })
   }
 }

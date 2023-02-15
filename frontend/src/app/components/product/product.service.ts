@@ -19,7 +19,6 @@ export class ProductService {
       horizontalPosition: "right",
       verticalPosition: "top"
     })
-    console.log(message)
   }
 
   create(product: Product): Observable<Product> {
@@ -38,5 +37,10 @@ export class ProductService {
   update(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`
     return this.httpClient.put<Product>(url, product)
+  }
+
+  delete(id: string|undefined): Observable<Product>{
+    const url = `${this.baseUrl}/${id}`
+    return this.httpClient.delete<Product>(url)
   }
 }
