@@ -30,13 +30,13 @@ export class ProductService {
     return this.httpClient.get<Product[]>(this.baseUrl)
   }
 
-  findById(id: string): Observable<Product> {
+  findById(id: string|null): Observable<Product> {
     const url = `${this.baseUrl}/${id}`
     return this.httpClient.get<Product>(url)
   }
 
   update(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`
-    return this.httpClient.put<Product>(this.baseUrl, product)
+    return this.httpClient.put<Product>(url, product)
   }
 }
