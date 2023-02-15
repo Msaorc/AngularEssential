@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Notebook Dell",
-      "price": "8000"
+      "price": "8530"
     },
     {
       "id": 2,
@@ -24,6 +24,16 @@
       "name": "New Product",
       "price": "350",
       "id": 5
+    },
+    {
+      "name": "Go Expert",
+      "price": "350",
+      "id": 6
+    },
+    {
+      "name": "tesate",
+      "price": "350",
+      "id": 7
     }
   ]
 }
